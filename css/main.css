@@ -1,4 +1,5 @@
 /***** Base Styles *****/
+/* For mobile phones: */
 * {
   box-sizing: border-box;
 }
@@ -6,36 +7,38 @@
 body {
   font-family: 'Karla',sans-serif;
   font-size: 16px;
-  width: 1440px;
-  height: 800px;
+  width: 375px;
+  height: auto;
   background-color: #e6eff6;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 
 /***** Grid *****/
 .full-width {
-  width: 675px;
+  width: 100%;
+  /* max-width: 375px; */
 }
 
 .half-width {
-  width: 50%;
-  /* height: 275px; */
+  width: 100%;
+  height: 300px;
+
 }
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 675px;
-  height: 515px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 375px;
+  height: 910px;
+  margin: 0 auto;
   border: none;
   border-radius: 5px;
-  /* margin: 0 auto; */
-
 }
 
 h1,
@@ -44,9 +47,11 @@ h2 {
 }
 
 #top-section {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
-  height: 45%;
-  padding-left: 45px;
+  height: 300px;
+  padding-left: 3%;
 }
 
 h1 {
@@ -68,15 +73,15 @@ h2 {
 #top-section p {
   color: hsl(218, 22%, 67%);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
 }
 
 #bottom-section {
-  height: 55%;
+  /* height: 55%; */
   color: #ffffff;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
 }
 
@@ -86,7 +91,7 @@ h2 {
 
 #left-col {
   background-color: #2bb3b1;
-  padding-left: 45px;
+  padding-left: 3%;
 
 }
 
@@ -99,12 +104,12 @@ h2 {
 }
 
 #month {
-  align-self: center;
+  align-text: center;
 }
 
 button {
   background-color: hsl(71, 73%, 54%);
-  width: 80%;
+  width: 75%;
   border-radius: 5px;
   border: none;
   margin-top: 1em;
@@ -114,8 +119,7 @@ button {
 
 #right-col {
   background-color: #4abebd;
-  padding-left: 45px;
-
+  padding-left: 3%;
 }
 
 ul {
@@ -131,3 +135,53 @@ footer {
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* For tablets: */
+
+
+/* For desktop: */
+@media screen and (min-width: 675px) {
+  body{
+    width: 1440px;
+    height: 800px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .half-width {
+    width: 50%;
+  }
+
+  main {
+    width: 675px;
+    height: 515px;
+  }
+
+  #top-section {
+    height: 45%;
+    padding-left: 45px;
+  }
+
+  #top-section p {
+    line-height: 1.6;
+  }
+
+  #bottom-section {
+    flex-direction: row;
+    height: 55%;
+  }
+
+  #left-col {
+    padding-left: 45px;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  #right-col {
+    padding-left: 45px;
+  }
+}
