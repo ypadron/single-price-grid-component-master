@@ -9,6 +9,7 @@ body {
   font-size: 16px;
   width: 375px;
   height: auto;
+  min-height: 100vh;
   background-color: #e6eff6;
   display: flex;
   flex-direction: column;
@@ -32,7 +33,6 @@ main {
   flex-direction: column;
   width: 375px;
   height: 900px;
-  margin: 0 auto;
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 15px #8d8989;
@@ -56,7 +56,6 @@ h1 {
   color: hsl(179, 62%, 43%);
   padding: 1.6em 0 1em;
   font-size: 1.5em;
-
 }
 
 h2 {
@@ -76,7 +75,6 @@ h2 {
 }
 
 #bottom-section {
-  /* height: 55%; */
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -92,7 +90,7 @@ h2 {
 }
 
 #left-col p {
-  margin-top: .25em;
+  margin-top: .75em;
 }
 
 #cost {
@@ -110,7 +108,7 @@ button {
   width: 75%;
   border-radius: 5px;
   border: none;
-  margin-top: 1.4em;
+  margin-top: 1em;
   padding: .9em 2em;
   box-shadow: 3px 3px 10px #8d8989;
 }
@@ -139,10 +137,6 @@ footer {
 
 /* For desktop: */
 @media screen and (min-width: 675px) {
-  body{
-    width: 1440px;
-    height: 750px;
-  }
 
   .full-width {
     width: 100%;
