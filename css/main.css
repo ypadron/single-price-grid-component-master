@@ -54,18 +54,18 @@ h2 {
 
 h1 {
   color: hsl(179, 62%, 43%);
-  padding: 1.5em 0 1em;
-  font-size: 1.7em;
+  padding: 1.6em 0 1em;
+  font-size: 1.5em;
 
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.2em;
 }
 
 #top-section h2 {
   color: hsl(71, 73%, 54%);
-  padding: 0 0 1em;
+  padding: 0 0 .5em;
 }
 
 #top-section p {
@@ -83,7 +83,7 @@ h2 {
 }
 
 #bottom-section h2 {
-  padding: 2em 0 .5em;
+  padding: 2em 0 .25em;
 }
 
 #left-col {
@@ -92,7 +92,7 @@ h2 {
 }
 
 #left-col p {
-  margin-top: 1em;
+  margin-top: .25em;
 }
 
 #cost {
@@ -110,8 +110,8 @@ button {
   width: 75%;
   border-radius: 5px;
   border: none;
-  margin-top: 1em;
-  padding: 1.1em 2em;
+  margin-top: 1.4em;
+  padding: .9em 2em;
   box-shadow: 3px 3px 10px #8d8989;
 }
 
@@ -141,7 +141,7 @@ footer {
 @media screen and (min-width: 675px) {
   body{
     width: 1440px;
-    height: 800px;
+    height: 750px;
   }
 
   .full-width {
@@ -154,7 +154,7 @@ footer {
 
   main {
     width: 675px;
-    height: 515px;
+    height: 470px;
   }
 
   #top-section {
@@ -175,11 +175,19 @@ footer {
     padding-left: 45px;
   }
 
+  #left-col p {
+    margin-bottom: .5em;
+  }
+
   button {
     width: 80%;
   }
 
   #right-col {
     padding-left: 45px;
+  }
+
+  li  {
+    font-size: .9em;
   }
 }
