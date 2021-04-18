@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-flexbox-oLZlg1VRG)
 - Live Site URL: [Add live site URL here](https://ypadron.github.io/single-price-grid-component-master/)
 
 ## My process
